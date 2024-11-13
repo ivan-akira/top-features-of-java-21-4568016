@@ -12,8 +12,7 @@ public class Register {
     }
 
     public static void printDirectReports(Employee employee) {
-        if (employee instanceof Manager manager) {
-            var directReports = manager.directReports();
+        if (employee instanceof Manager(_, var directReports)) {
             System.out.println("Direct reports: " + directReports);
         } else {
             throw new IllegalArgumentException("Employee is not a manager");
